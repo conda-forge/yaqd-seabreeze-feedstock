@@ -5,11 +5,11 @@ Home: https://yaq.fyi
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-seabreeze-feedstock/blob/master/LICENSE.txt)
 
 Summary: yaq daemons for Ocean Optics SeaBreeze spectrometers.
 
-
+Development: https://gitlab.com/yaq/yaqd-seabreeze
 
 Current build status
 ====================
