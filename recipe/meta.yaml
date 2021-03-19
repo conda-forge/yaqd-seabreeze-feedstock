@@ -25,13 +25,13 @@ requirements:
     - numpy
     - pyusb
     - seabreeze
-    - yaqd-core >=2020.06.3
+    - yaqd-core >=2021.3.0
   run:
     - python >=3.7
     - numpy
     - pyusb
     - seabreeze
-    - yaqd-core >=2020.06.3
+    - yaqd-core >=2021.3.0
 
 test:
   imports:
