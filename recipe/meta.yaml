@@ -1,5 +1,5 @@
 {% set name = "yaqd-seabreeze" %}
-{% set version = "2021.3.1" %}
+{% set version = "2021.3.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fe0fdf3e805d93c370b8b14304205dabb6f27b961fe2559adee698a294706096
+  sha256: 0e0f88d657d43588b1970abd0e0e6bda6be2baddee00a8100ea10aa7452542a2
 
 build:
   number: 0
