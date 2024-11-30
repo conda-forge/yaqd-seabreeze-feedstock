@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 153e6d56a9532dce0d3ba09af5c8d2052d1e708f1490cef19ce5106fdc5cac98
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-seabreeze = yaqd_seabreeze._seabreeze:Seabreeze.main
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit
     - numpy
@@ -27,7 +27,7 @@ requirements:
     - seabreeze
     - yaqd-core >=2021.3.0
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy
     - pyusb
     - seabreeze
@@ -41,6 +41,7 @@ test:
     - yaqd-seabreeze --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://yaq.fyi
